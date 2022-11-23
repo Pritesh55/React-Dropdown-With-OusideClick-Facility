@@ -1,0 +1,58 @@
+body {
+  font: 100%/1.5 monospace;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  font-weight: bold;
+  color: #777;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: color 300ms ease;
+}
+
+nav a:hover {
+  color: #223330;
+}
+
+.img {
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(100, 100, 100, 0.1);
+}
+
+/* class is used by <NavLink/> */
+.active {
+  color: #223330;
+  background-color: #fed;
+  border-radius: 5px;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.secondary {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: color 300ms ease;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
